@@ -1,0 +1,109 @@
+#anime-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#card {
+    width: 600px;
+    height: 300px;
+    /* border: 1px solid yellow; */
+    border-radius: .28571429rem;
+    display: flex;
+    margin: 12.25px 7px;
+    font-size: 1em;
+    line-height: 1.4285em;
+    cursor: pointer;
+    position: relative;
+    transition: top ease 0.5s;
+    background: rgba(255, 255, 255, 1);
+}
+
+#card:hover {
+    top: -10px;
+}
+
+#image {
+    border-bottom-left-radius: .28571429rem;
+    border-top-left-radius: .28571429rem;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background:rgba(0, 0, 0, .5);
+    border-top-right-radius: .28571429rem;
+    border-bottom-right-radius: .28571429rem;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 83%;
+}
+
+#header {
+    padding: .5em .75em;
+    display: block;
+    font-weight: 700;
+    font-size: 1.28571429em;
+    line-height: 1.28571429em;
+}
+
+#meta {
+    padding: 0px 1em;
+    margin: 0px;
+    line-height: 1em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+    align-self: end;
+}
+
+#description {
+    padding: 0px 1em;
+    height: 6.5em;
+    overflow-y: auto;
+    margin-top: 3px;
+    width: 100%;
+    flex: 1;
+}
+
+#extra {
+    color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 15px 15px;
+    margin-top: auto;
+    background: rgba(0, 0, 100, .4);
+    color: white;
+    border-bottom-right-radius: .28571429rem;
+}
+
+#filters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#checkbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+p {
+    margin: 0px 0px 3px;
+}
+
+body {
+    background: rgba(0, 0, 0, .7)
+}
