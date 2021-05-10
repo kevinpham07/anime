@@ -4,15 +4,15 @@ import { getAnimes } from '../actions';
 
 import AnimeDetail from './AnimeDetail';
 import Filters from './Filters';
+import users from '../apis/users';
 
 const AnimeList = (props) => {
 
     useEffect( () => {
-
+        
         props.getAnimes({pageLimit: 3});
     
     }, []);
-
 
     const renderedItems = props.animes.map( (anime) => {
         const { averageRating, posterImage, description, titles, episodeCount, status, ageRating } = anime.attributes;

@@ -1,6 +1,6 @@
 import { useQuery, gql } from '@apollo/client';
 
-const GetGenres = (title, setter) => {
+const useGenres = (title) => {
     const GET_ANIMES = gql`
         query {
             Media (type: ANIME, search: "${title}") {
@@ -24,4 +24,4 @@ const GetGenres = (title, setter) => {
     }
 }
 
-export default GetGenres;
+export default useGenres;

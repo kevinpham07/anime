@@ -1,15 +1,15 @@
 import React from 'react';
 
-import GetGenres from './GetGenres';
+import useGenres from '../hooks/useGenres';
 
 const AnimeDetail = (props) => {
     const { image, description, title, episodes, status, score } = props;
     
-    const genres = GetGenres(title.en_jp);
+    const genres = useGenres(title.en_jp);
 
     return (
         <div id="card">
-            <img id="image" src={ image } alt="Cover Image" />
+            <img id="image" src={ image } alt="Cover" />
             <div id="content-container">
                 <div id="content">
                     { title.en_jp

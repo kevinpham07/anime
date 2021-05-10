@@ -1,7 +1,6 @@
 #anime-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 #card {
@@ -41,6 +40,7 @@
     display: flex;
     flex-direction: column;
     height: 83%;
+    background-color:rgba(255, 255, 255, 1)
 }
 
 #header {
@@ -58,13 +58,13 @@
     font-size: 1em;
     color: rgba(0, 0, 0, .4);
     align-self: end;
+    margin-bottom: 3px;
 }
 
 #description {
     padding: 0px 1em;
     height: 6.5em;
     overflow-y: auto;
-    margin-top: 3px;
     width: 100%;
     flex: 1;
 }
@@ -97,7 +97,7 @@
 #checkbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 5px 10px;
 }
 
 p {
@@ -105,5 +105,6 @@ p {
 }
 
 body {
-    background: rgba(0, 0, 0, .7)
+    background: #E8EAEB;
+    padding: 0px 30px;
 }
