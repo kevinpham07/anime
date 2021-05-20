@@ -4,7 +4,7 @@ const Header = () => {
 
     return (
         <div className="ui secondary pointing menu">
-            <h1>Anime</h1>
+            <h1>Animes</h1>
         </div>
     );
 };
